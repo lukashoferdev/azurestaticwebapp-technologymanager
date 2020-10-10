@@ -12,6 +12,11 @@
   <main>
     <h1>Technology Manager App</h1>
   </main>
+  <script>
+    fetch('/api/Technology')
+    .then(response => response.text())
+    .then(data => console.log(data));
+  </script>
 </body>
 
 </html>
