@@ -11,15 +11,15 @@
 <body>
   <main>
     <h1>Technology Manager App</h1>
-    <p id="test"></p>
+    <p id="technologies"></p>
   </main>
   <script>
     var result = "leer"; 
-    fetch('/api/Technology')
+    fetch('/api/technologies')
     .then(response => response.text())
     .then(data => {
       this.result = data
-      document.getElementById("test").innerHTML = result;
+      document.getElementById("technologies").innerHTML = result;
     })
     
   </script>
